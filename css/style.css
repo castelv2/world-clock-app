@@ -1,3 +1,61 @@
 body {
   background: bisque;
 }
+
+h1 {
+  text-align: center;
+  font-size: 35px;
+}
+
+h2 {
+  margin: 0 0 5px;
+  font-size: 27px;
+}
+.container {
+  max-width: 600px;
+  margin: 60px auto;
+  background: white;
+  padding: 30px;
+  box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+  border-radius: 10px;
+}
+select {
+  display: block;
+  font-size: 22px;
+  width: 100%;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.city {
+  display: flex;
+  margin: 10px 0;
+  justify-content: space-between;
+  padding: 30px;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+}
+
+.city: :last-child {
+  border: none;
+}
+
+.date {
+  opacity: 0.6;
+}
+
+.time {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.time small {
+  font-size: 25px;
+  vertical-align: middle;
+  line-height: 48px;
+}
+
+footer {
+  text-align: center;
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.8);
+}
