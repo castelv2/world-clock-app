@@ -24,6 +24,19 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
+
+  //Dubai
+  let dubaiElement = document.querySelector("#dubai");
+  if (dubaiElement) {
+    let dubaiDateElement = dubaiElement.querySelector(".date");
+    let dubaiTimeElement = dubaiElement.querySelector(".time");
+    let dubaiTime = moment().tz("Asia/Dubai");
+
+    dubaiDateElement.innerHTML = dubaiTime.format("MMMM Do YYYY");
+    dubaiTimeElement.innerHTML = dubaiTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
 }
 function updateCity(event) {
   let cityTimeZone = event.target.value;
@@ -43,7 +56,9 @@ function updateCity(event) {
           "h:mm:ss"
         )} <small>${cityTime.format("A")}</small>
         </div>
-    </div>`;
+    </div>
+    <a href="/">All cities</a>
+    `;
 }
 
 updateTime();
